@@ -33,3 +33,15 @@ if (eta < 18) {
 } else {
   document.getElementById("result").innerHTML = parseFloat(totale) + "€";
 }
+
+var d = new Date();
+console.log(d);
+
+d.getHours();
+console.log(d.getHours());
+
+d.getMilliseconds();
+console.log(d.getMilliseconds());
+
+d.getFullYear();
+console.log(d.getFullYear());
