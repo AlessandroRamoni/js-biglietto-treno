@@ -6,5 +6,33 @@
 
 .price{
     color: green;
-    font-size: x-large;
+    font-size: 2em;
+}
+
+
+.card{
+    width: 30rem;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-title{
+    font-size: 1.8em;
+    font-weight: 800;
+    color: rgb(19, 160, 7);
+}
+
+.card-text{
+    color: rgb(26, 91, 230);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 20px;
 }

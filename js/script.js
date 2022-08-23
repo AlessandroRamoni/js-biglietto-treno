@@ -1,28 +1,30 @@
 console.log("ciao");
 
-const km = 0.21;
+const costoKm = 0.21;
 
-let question1 = parseInt(
+let chilometriTotali = parseInt(
   prompt("Quanti chilometri vuoi percorrere oggi con noi?")
 );
 
-let question2 = parseInt(prompt("Quanti anni hai?"));
+let eta = parseInt(prompt("Quanti anni hai?"));
 
-console.log(question1, question2);
+console.log(chilometriTotali, eta);
 
-let totale = km * question1;
+let totale = costoKm * chilometriTotali;
 console.log(totale);
 
 let sconto20;
 let sconto40;
 
-if (question2 < 18) {
+if (eta < 18) {
   sconto20 = (totale * 20) / 100;
 
   console.log(totale - sconto20);
   document.getElementById("result20").innerHTML =
+    //`${parseFloat(totale - sconto40)} €`
+
     parseFloat(totale - sconto20) + "€";
-} else if (question2 > 65) {
+} else if (eta > 65) {
   sconto40 = (totale * 40) / 100;
 
   console.log(totale - sconto40);
