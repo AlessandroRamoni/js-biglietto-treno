@@ -46,3 +46,7 @@ console.log(d.getMilliseconds());
 
 d.getFullYear();
 console.log(d.getFullYear());
+
+//numeri random da 50 a 100?
+
+Math.floor(math.random() * 51) + 50;
