@@ -2,11 +2,10 @@ console.log("ciao");
 
 const costoKm = 0.21;
 
-let chilometriTotali = parseInt(
-  prompt("Quanti chilometri vuoi percorrere oggi con noi?")
+let chilometriTotali = prompt(
+  "Quanti chilometri vuoi percorrere oggi con noi?"
 );
-
-let eta = parseInt(prompt("Quanti anni hai?"));
+let eta = prompt("Quanti anni hai?");
 
 console.log(chilometriTotali, eta);
 
@@ -16,6 +15,8 @@ console.log(totale);
 let sconto20;
 let sconto40;
 
+//if (!isNaN(chilometriTotali) && !isNaN(eta){}
+
 if (eta < 18) {
   sconto20 = (totale * 20) / 100;
 
@@ -23,15 +24,15 @@ if (eta < 18) {
   document.getElementById("result20").innerHTML =
     //`${parseFloat(totale - sconto40)} €`
 
-    parseFloat(totale - sconto20) + "€";
+    (totale - sconto20).toFixed(2) + "€";
 } else if (eta > 65) {
   sconto40 = (totale * 40) / 100;
 
   console.log(totale - sconto40);
   document.getElementById("result40").innerHTML =
-    parseFloat(totale - sconto40) + "€";
+    (totale - sconto40).toFixed(2) + "€";
 } else {
-  document.getElementById("result").innerHTML = parseFloat(totale) + "€";
+  document.getElementById("result").innerHTML = totale.toFixed(2) + "€";
 }
 
 var d = new Date();
